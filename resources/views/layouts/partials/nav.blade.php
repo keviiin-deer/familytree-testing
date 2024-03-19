@@ -27,8 +27,8 @@
             <ul class="nav navbar-nav navbar-right">
                 <!-- Authentication Links -->
                 <?php $mark = (preg_match('/\?/', url()->current())) ? '&' : '?';?>
-                <li><a href="{{ url(url()->current() . $mark . 'lang=en') }}">中文</a></li>
-                <li><a href="{{ url(url()->current() . $mark . 'lang=id') }}">英文</a></li>
+                <li><a href="{{ url(url()->current() . $mark . 'lang=id') }}">中文</a></li>
+                <li><a href="{{ url(url()->current() . $mark . 'lang=en') }}">英文</a></li>
                 @if (Auth::guest())
                     <li><a href="{{ route('login') }}">登录</a></li>
                     <li><a href="{{ route('register') }}">注册</a></li>
